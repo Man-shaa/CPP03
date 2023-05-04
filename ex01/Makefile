@@ -1,4 +1,4 @@
-NAME		=	claptrap
+NAME		=	scavtrap
 
 OBJ_DIR		=	objs
 SRC_DIR		=	$(shell find . -type d)
@@ -6,9 +6,11 @@ SRC_DIR		=	$(shell find . -type d)
 vpath %.cpp $(foreach dir, $(SRC_DIR), $(dir):)
 
 HEADER		=	ClapTrap.hpp	\
+				ScavTrap.hpp
 
 SRCS	 	=	main.cpp		\
-				ClapTrap.cpp
+				ClapTrap.cpp	\
+				ScavTrap.cpp
 
 OBJS		=	$(SRCS:%.cpp=${OBJ_DIR}/%.o)
 
