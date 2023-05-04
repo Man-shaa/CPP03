@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 17:45:30 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 16:55:37 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/04 17:03:34 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 class ClapTrap
 {
-	private:
+	protected:
 		std::string	_name;
 		int			_hp;
 		int			_energy;
