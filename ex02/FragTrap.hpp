@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 17:00:08 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 17:06:27 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/04 17:35:05 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class FragTrap : public ClapTrap
 {
 	public:
+		FragTrap(void);
 		FragTrap(std::string name);
 		FragTrap(FragTrap &toCopy);
 		~FragTrap();

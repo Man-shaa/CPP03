@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 16:07:46 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 17:03:43 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/04 17:34:14 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class ScavTrap : public ClapTrap
 {
 	public:
+		ScavTrap(void);
 		ScavTrap(std::string name);
 		ScavTrap(ScavTrap &toCopy);
 		~ScavTrap();

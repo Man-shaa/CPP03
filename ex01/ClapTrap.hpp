@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 17:45:30 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 17:03:34 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/04 17:34:20 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class ClapTrap
 		int			_attack;
 
 	public:
+		ClapTrap(void);
 		ClapTrap(std::string name);
 		ClapTrap(ClapTrap &toCopy);
 		ClapTrap(std::string name, unsigned int hp, unsigned int energy, unsigned int attack);
