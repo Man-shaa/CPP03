@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 17:37:06 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 14:56:51 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/04 15:28:26 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,30 @@ ClapTrap::ClapTrap(std::string name) : _name(name), _hp(10), _energy(10), _attac
 ClapTrap::~ClapTrap()
 {
 	return ;
+}
+
+ClapTrap::ClapTrap(ClapTrap &toCopy)
+{
+	if (this != &toCopy)
+		*this = toCopy;
+	return ;
+}
+
+ClapTrap &ClapTrap::operator = (ClapTrap &toCopy)
+{
+	this->_name = toCopy._name;
+	this->_hp = toCopy._hp;
+	this->_energy = toCopy._energy;
+	this->_attack = toCopy._attack;
+	return(*this);
+}
+
+void	ClapTrap::status()
+{
+	std::cout << "Name : " << _name << std::endl;
+	std::cout << "hp : " << _hp << std::endl;
+	std::cout << "energy : " << _energy << std::endl;
+	std::cout << "attack : " << _attack << std::endl;
 }
 
 void	ClapTrap::attack(const std::string& target)

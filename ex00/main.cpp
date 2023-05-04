@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 17:36:47 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 14:57:02 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/04 16:00:38 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	main(void)
 {
-	ClapTrap	Manuel("Manuel");
 	ClapTrap	Naelle("Naelle");
+	ClapTrap	Shanley("Shanley");
 
-	Manuel.attack("Naelle");
-	Naelle.takeDamage(5);
-	Naelle.beRepaired(-4);
+	Naelle.attack("Shanley le gros predateur");
+	Shanley.takeDamage(3);
+	Shanley.beRepaired(2);
 }
