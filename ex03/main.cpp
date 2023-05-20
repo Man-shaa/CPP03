@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 17:36:47 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 18:47:03 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/20 14:15:02 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,17 @@
 int	main()
 {
 	DiamondTrap d;
+
 	std::cout << std::endl;
-	DiamondTrap a( "XD" );
+	DiamondTrap a("Shanley");
 	std::cout << std::endl;
-	DiamondTrap b( "Alfonso" );
-	std::cout << std::endl;
-	std::cout << std::endl;
+	DiamondTrap b("Manuel");
+	std::cout << std::endl << std::endl;
 	b.attack("Me");
 	d = b;
 	std::cout << std::endl;
 	a.whoAmI();
+	d.whoAmI();
+	b.whoAmI();
 	std::cout << std::endl;
 }
