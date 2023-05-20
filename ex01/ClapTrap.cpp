@@ -6,14 +6,14 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 17:37:06 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/20 13:59:47 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/20 14:11:31 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
 
-ClapTrap::ClapTrap(void) : _name("Default"), _hp(80), _energy(30), _attack(15)
+ClapTrap::ClapTrap(void) : _name("Default"), _hp(10), _energy(10), _attack(0)
 {
 	std::cout << "ClapTrap default constructor called" << std::endl;
 	return ;
