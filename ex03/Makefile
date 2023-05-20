@@ -22,7 +22,7 @@ RM			=	rm -rf
 
 CC			=	c++
 
-CFLAGS		=	-Werror -Wall -Wextra -std=c++98 -g3
+CFLAGS		=	-Werror -Wall -Wextra -std=c++98 -g3 -Wshadow -Wno-shadow
 
 all:	${NAME}
 
