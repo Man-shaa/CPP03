@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 17:37:06 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 17:33:11 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/20 13:59:47 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ ClapTrap::ClapTrap(std::string name) : _name(name), _hp(10), _energy(10), _attac
 ClapTrap::ClapTrap(std::string name, unsigned int hp, unsigned int energy, unsigned int attack) : _name(name),
 _hp(hp), _energy(energy), _attack(attack)
 {
-	std::cout << "ClapTrap special constructor called" << std::endl;
+	std::cout << "ClapTrap init constructor called" << std::endl;
 	return ;
 }
 
@@ -41,7 +41,7 @@ ClapTrap::~ClapTrap()
 
 ClapTrap::ClapTrap(ClapTrap &toCopy)
 {
-	std::cout << "ClapTrap constructor copy called" << std::endl;
+	std::cout << "ClapTrap copy constructor called" << std::endl;
 	if (this != &toCopy)
 		*this = toCopy;
 	return ;
