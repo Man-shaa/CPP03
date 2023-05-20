@@ -6,7 +6,7 @@
 /*   By: msharifi <msharifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 17:37:06 by msharifi          #+#    #+#             */
-/*   Updated: 2023/05/04 15:28:26 by msharifi         ###   ########.fr       */
+/*   Updated: 2023/05/20 13:55:00 by msharifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,21 @@
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _hp(10), _energy(10), _attack(0)
 {
-	return ;
-}
-
-ClapTrap::~ClapTrap()
-{
+	std::cout << "ClapTrap constructor called" << std::endl;
 	return ;
 }
 
 ClapTrap::ClapTrap(ClapTrap &toCopy)
 {
+	std::cout << "ClapTrap copy constructor called" << std::endl;
 	if (this != &toCopy)
 		*this = toCopy;
+	return ;
+}
+
+ClapTrap::~ClapTrap()
+{
+	std::cout << "ClapTrap destructor called" << std::endl;
 	return ;
 }
 
